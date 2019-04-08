@@ -67,11 +67,11 @@
     <!-- TODO: add a switch for picking different charts to present -->
     <!-- <link rel="stylesheet" type="text/css" href="./radar_source_files/radar-chart.css" /> -->
 
-    <!-- Scatter-matrix -->
+    <!-- Scatter-matrix
     <script src="./scatter_matrix_source_files/scatter-matrix.js"></script>
-    <!-- Scatter-matrix CSS -->
+    
     <link type="text/css" rel="stylesheet" href="./scatter_matrix_source_files/scatter-matrix.css">
-
+-->
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap_side_bar/css/bootstrap.min.css" rel="stylesheet">
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
@@ -649,28 +649,28 @@
         // update radar chart
         var scatterChart;
         // add scatter chart
-        // function addScatterChart() {
-        //     var pcHeight = d3.select("#graph").style("height").replace("px", "");
-        //     var rightChartWidth = d3.select("#radarChart").style("width").replace("px", "");
-        //     var selectedData;
-        //     if (graph.brushed().length > 0) {
-        //         selectedData = graph.brushed();
-        //     } else {
-        //         selectedData = graph.data();
-        //     }
-        //     var sm = new ScatterMatrix("", selectedData, '#radarChart');
-        //     sm.cellSize((pcHeight - 60) / 2);
-        //     sm.render();
-        //     // adjust the chart style
-        //     //var chartWidth = d3.select(".scatter-matrix-svg svg").style("width").replace("px", "");
-        //     d3.select(".scatter-matrix-svg")
-        //         .style("width", pcHeight - 10 + "px");
-        //     d3.select(".scatter-matrix-control")
-        //         .style("height", pcHeight - 30 + "px");
-        //
-        //     scatterChart = sm;
-        //     //return sm;
-        // }
+        function addScatterChart() {
+            var pcHeight = d3.select("#graph").style("height").replace("px", "");
+            var rightChartWidth = d3.select("#radarChart").style("width").replace("px", "");
+            var selectedData;
+            if (graph.brushed().length > 0) {
+                selectedData = graph.brushed();
+            } else {
+                selectedData = graph.data();
+            }
+            var sm = new ScatterMatrix("", selectedData, '#radarChart');
+            sm.cellSize((pcHeight - 60) / 2);
+            sm.render();
+            // adjust the chart style
+            //var chartWidth = d3.select(".scatter-matrix-svg svg").style("width").replace("px", "");
+            d3.select(".scatter-matrix-svg")
+                .style("width", pcHeight - 10 + "px");
+            d3.select(".scatter-matrix-control")
+                .style("height", pcHeight - 30 + "px");
+
+            scatterChart = sm;
+            //return sm;
+        }
         //unique id for each Circle
         function getCircleID(d) {
             var id;
