@@ -26,6 +26,10 @@ output {
     text-align: center;
 }
 
+.omrtpic {
+  width: 300px;
+}
+
 .col-centered {
     display: inline-block;
     float: none;
