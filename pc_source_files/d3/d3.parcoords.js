@@ -26,7 +26,7 @@ d3.parcoords = function (config) {
             bottom: 8,
             left: 0
         },
-        color: "#069",
+        color: "#1a2659",
         composite: "source-over",
         alpha: 0.7,
         bundlingStrength: 0.5,
@@ -38,7 +38,7 @@ d3.parcoords = function (config) {
         animationTime: 300 // How long it takes to flip the axis when you double click
     };
 
-    __.chartSize=[__.width,__.height]; 
+    __.chartSize=[__.width,__.height];
 
     extend(__, config);
 
@@ -258,7 +258,7 @@ d3.parcoords = function (config) {
                         .domain([extent[0]])
                         .rangePoints(getRange());
                 }
-                
+
                 if (__.yscaleDomains[k] !== undefined) {
                     extent = __.yscaleDomains[k];
                 }
@@ -324,7 +324,7 @@ d3.parcoords = function (config) {
                 }
 
 
-                
+
                 __.yscaleTicks[k] = domain;
 
                 return d3.scale.ordinal()
@@ -458,9 +458,9 @@ d3.parcoords = function (config) {
             newDims[k].tickPadding = newDims[k].tickPadding != null ? newDims[k].tickPadding : 3;
             newDims[k].type = newDims[k].type ? newDims[k].type : types[k];
 
-            
+
             //newDims[k].yscale.domain //domain is setted by autoscale
-            
+
             currIndex++;
         });
         //console.log(newDims);
@@ -517,7 +517,7 @@ d3.parcoords = function (config) {
         }
         var highlightedData = pc.highlighted();
 
-        
+
 
         //pc.autoscale();
         pc.updateAxes();
@@ -1481,7 +1481,7 @@ d3.parcoords = function (config) {
 
         // scales
         //pc.autoscale();
-        
+
         if (isBrushed()) {
             pc.autoscale();
             pc.renderBrushed();
