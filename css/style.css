@@ -110,7 +110,7 @@ output {
     background-image: url(../img/thorntontomasetti.jpg);
     background-size: contain;
 }
-div#thumbnails-btm_container.onRight, 
+div#thumbnails-btm_container.onRight,
 div#thumbnails-btm_container.rightChartFullScreenToggled
 {
     position: absolute;
@@ -121,10 +121,10 @@ div#thumbnails-btm_container.rightChartFullScreenToggled
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    
+
 }
 div#thumbnails-btm_container.onRight,
-div#thumbnails-btm_container.onRight #thumbnails-btm div, 
+div#thumbnails-btm_container.onRight #thumbnails-btm div,
 div#thumbnails-btm_container.rightChartFullScreenToggled #thumbnails-btm div
 {
     width: 25%;
@@ -208,14 +208,14 @@ a#copyRightButton {
     margin: 5px;
 }*/
 
-.popupWindow, 
+.popupWindow,
 .modal-backdrop{
     background-color: rgba(0, 0, 0, 0.30);
 }
 
 #welcomeContainer .col-sm-4 {
-    width: 33.33333333%;
-    float: left;
+    width: 100%;
+    float: center;
 }
 
 .popupWindow div.col-centered{
@@ -226,11 +226,11 @@ a#copyRightButton {
     height: 80%;
     margin-left: auto;
     margin-right: auto;
-    max-height: 700px; 
+    max-height: 700px;
     min-height: 530px;
     min-width: 560px;
     padding: 2em;
-    
+
 }
 
 #ScChartWrapper {
@@ -244,7 +244,7 @@ a#copyRightButton {
     position: absolute;
 }
 
-.col-lg-3 .chartSide.rightChartFullScreenToggled, 
+.col-lg-3 .chartSide.rightChartFullScreenToggled,
 .col-lg-3 .row-fluid.rightChartFullScreenToggled{
     width: 100%;
     float: left;
